@@ -5,6 +5,11 @@
 				$(s).parent().tooltip();
                 $(s).text('?');
                 $(s).addClass('tooltipindicator'); 
+		$(s).click(function(){
+					$(s).removeClass('tooltipindicator');
+					$(s).html('<div class="shorthelp">'+s.title+'</div>');
+				});
+			
 
 			});
 			$('.requireJS').show();
@@ -45,7 +50,7 @@
 			});*/
 
 			function enableTree(where, on)
-			{
+		{
 				if ($('#greyed')[0].checked){$('input, select', where).attr('disabled', on ? null : 'disabled');
 				$('label', where).toggleClass('grey', !on);
 				$(where).slideDown();}
