@@ -54,7 +54,13 @@ button, .toggle {
 	font-size: 80%;
 	vertical-align: super;
 }
-		
+
+.shorthelp {
+	display: block-inline;
+	background-color: #10a;
+	color: #fff;
+	border: solid 1px #10a;
+}
 
 /* IE hacks */
 *+html .nowrap {white-space: normal; display: inline-block;}
